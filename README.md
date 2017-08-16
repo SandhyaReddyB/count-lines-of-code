@@ -8,3 +8,5 @@ To execute the application, run the following commands
 - ng serve
 
 Hit the url http://localhost:4200
+
+Alternatively, hit http://ng-count-lines-of-code.s3-website-us-east-1.amazonaws.com/ to check the live version of this application.
