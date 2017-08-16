@@ -4,5 +4,6 @@ This Angular app is to count lines of Java Code excluding empty lines, single li
 
 Assuming Node.js and npm is already installed,
 To execute the application, run the following commands
+- npm install
 - npm install --save bootstrap
 - ng serve
