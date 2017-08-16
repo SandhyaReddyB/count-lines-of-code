@@ -1,0 +1,26 @@
+<div class="count">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Count Lines of Code</h1>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="code">Enter your code</label>
+                <textarea ngModel name="linesofcode" required type="text" id="code" class="form-control" rows="50">
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <button [disabled]="!f.valid" class="btn btn-primary" type="submit">Submit</button>
+          <button [disabled]="!f.valid" class="btn btn-primary" type="button" (click) = "onReset()">Reset</button>
+        </form>
+        <br>
+        <div *ngIf="lineCount >= 0 && f.valid">
+          <p class="btn btn-primary">Number of lines of code: <span class="badge">{{lineCount}}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
